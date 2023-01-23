@@ -4,23 +4,23 @@
 # Если специальный символ введён после нескольких чисел, то вначале нужно добавить сумму этих чисел к полученной ранее сумме и после этого завершить программу.
 
 def asks_user(*nums):
-    sum = 0
+    sum_number = 0
     q = False
     for i in nums:
         try:
             if i:
-                sum += float(i)
+                sum_number += float(i)
         except ValueError as err:
             print(err)
             q = True
-    return sum, q
+    return sum_number, q
 
 sum_gl = 0
 
 while True:
     string_number = input('Введите любые числа через пробел: ').split(' ')
-    sum, stop_q = asks_user(*string_number)
-    sum_gl += sum
+    sum_number, stop_q = asks_user(*string_number)
+    sum_gl += sum_number
     print(f'сумма {sum_gl}')
     if stop_q:
         break
