@@ -3,19 +3,3 @@
 # Она отвечает за получение факториала числа. В цикле нужно выводить только первые n чисел, начиная с 1! и до n!.
 # Подсказка: факториал числа n — произведение чисел от 1 до n. Например, факториал четырёх 4! = 1 * 2 * 3 * 4 = 24.
 
-def gen(number):
-    count = 1
-    while count <= number:
-        yield count
-        count += 1
-
-
-i = 1
-my_function = []
-for el in gen(5):
-    if i > 15:
-        break
-    else:
-        my_function.append(el)
-        i += 1
-print(my_function)
