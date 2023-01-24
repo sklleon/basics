@@ -7,3 +7,12 @@ def my_fun(hour, rate, bonus):
 
 
 print(my_fun(16, 3500, 15000))
+
+# ---- version 2 ----
+from sys import argv
+
+
+def salary():
+    name, hour, rate, bonus = argv
+    zp = (int(hour) * int(rate)) + int(bonus)
+    print(f"Расчёта заработной платы: {zp}")
