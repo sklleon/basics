@@ -8,7 +8,11 @@
 
 from time import sleep
 
+<< << << < HEAD
 # вариант 1
+== == == =
+>> >> >> > a62a74a9af9301630cc59902d79325a50a4d94ec
+
 
 class TrafficLight:
     tl_color = ['Красный', 'Желтый', 'Зеленый']
@@ -28,6 +32,7 @@ class TrafficLight:
 
 obj = TrafficLight()
 obj.running()
+<< << << < HEAD
 
 
 # вариант 2
@@ -43,3 +48,5 @@ class Trafficlight:
 
 TL = Trafficlight()
 TL.running()
+== == == =
+>> >> >> > a62a74a9af9301630cc59902d79325a50a4d94ec
