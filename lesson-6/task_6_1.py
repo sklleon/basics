@@ -8,6 +8,7 @@
 
 from time import sleep
 
+# вариант 1
 
 class TrafficLight:
     tl_color = ['Красный', 'Желтый', 'Зеленый']
@@ -27,3 +28,18 @@ class TrafficLight:
 
 obj = TrafficLight()
 obj.running()
+
+
+# вариант 2
+class Trafficlight:
+    __color = {'Крассный': 7, 'Желтый': 2, 'Зеленый': 5}
+
+    @staticmethod
+    def running():
+        for key, value in Trafficlight.__color.items():
+            print(f'Светофор переключается в режиме {key}')
+            sleep(value)
+
+
+TL = Trafficlight()
+TL.running()
