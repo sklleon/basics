@@ -9,9 +9,7 @@
 
 class Road:
     self.weight = 25
-
-
-self.height = 5
+    self.height = 5
 
 
 def __init__(self, length, width):
